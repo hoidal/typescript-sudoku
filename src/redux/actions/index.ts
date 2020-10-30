@@ -10,7 +10,7 @@ export const createGrid = (): AnyAction => ({
     payload: createFullGrid()
 });
 
-export const selectedBlock = (coords: BLOCK_COORDS): AnyAction => ({
+export const selectBlock = (coords: BLOCK_COORDS): AnyAction => ({
     type: SELECT_BLOCK,
     payload: coords
 })
