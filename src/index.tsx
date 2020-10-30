@@ -1,21 +1,27 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
 import reportWebVitals from './core/reportWebVitals'
 
+import configureStore from './redux/store'
 import { Card, Content, Grid, Title } from './components'
 import { ThemeProvider } from 'styled-components'
 import { GlobalStyles, theme } from './styles'
+
+const store = configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Content data-cy="content">
-        <Title data-cy="title">Sudoku</Title>
-        <Card data-cy="card">
-          <Grid />
-        </Card>
-      </Content>
+      <Provider store={store}>
+        <Content data-cy="content">
+          <Title data-cy="title">Sudoku</Title>
+          <Card data-cy="card">
+            <Grid />
+          </Card>
+        </Content>
+      </Provider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
