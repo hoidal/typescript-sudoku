@@ -1,2 +1,2 @@
-export { default as Grid } from './grid'
-export * from './styles'
+export { default as Grid } from './grid/Grid.component'
+export * from './presentational-components'

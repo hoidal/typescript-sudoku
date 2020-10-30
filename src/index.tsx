@@ -1,4 +1,3 @@
-import { format } from 'path'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import reportWebVitals from './core/reportWebVitals'
