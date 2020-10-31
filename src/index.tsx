@@ -1,12 +1,12 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import reportWebVitals from './core/reportWebVitals'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import reportWebVitals from './core/reportWebVitals';
 
-import configureStore from './redux/store'
-import { Card, Content, Grid, Title } from './components'
-import { ThemeProvider } from 'styled-components'
-import { GlobalStyles, theme } from './styles'
+import configureStore from './redux/store';
+import { Card, Content, Grid, Title } from './components';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles, theme } from './styles';
 
 const store = configureStore();
 
@@ -30,4 +30,4 @@ ReactDOM.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals()
+reportWebVitals();

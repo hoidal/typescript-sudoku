@@ -4,5 +4,8 @@
   },
   "editor.formatOnSave": true,
   "javascript.format.enable": false,
-  "material-icon-theme.activeIconPack": "react_redux"
+  "material-icon-theme.activeIconPack": "react_redux",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }

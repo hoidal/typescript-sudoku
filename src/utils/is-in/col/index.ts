@@ -1,9 +1,9 @@
-import { GRID, NUMBERS } from '../../../typings'
+import { GRID, NUMBERS } from '../../../typings';
 
 interface IInput {
-    col: number;
-    grid: GRID;
-    value: NUMBERS;
+  col: number;
+  grid: GRID;
+  value: NUMBERS;
 }
 
 /**
@@ -11,10 +11,10 @@ interface IInput {
  * @param input Object with 9x9 Sudoku Grid holding column, index, values
  */
 const isInCol = ({ grid, col, value }: IInput): boolean => {
-    for(let i=0; i < 9; i++) {
-        if(value === grid[i][col]) return true;
-    }
-    return false;
-}
+  for (let i = 0; i < 9; i++) {
+    if (value === grid[i][col]) return true;
+  }
+  return false;
+};
 
 export default isInCol;

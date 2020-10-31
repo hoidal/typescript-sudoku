@@ -1,15 +1,11 @@
-import { createStore } from 'redux'
-import { devToolsEnhancer } from 'redux-devtools-extension'
+import { createStore } from 'redux';
+import { devToolsEnhancer } from 'redux-devtools-extension';
 
-import reducer from '../reducers'
+import reducer from '../reducers';
 
-const configureStore = ( initialState={} ) => {
-    const store = createStore(
-        reducer,
-        initialState,
-        devToolsEnhancer({})
-    )
-    return store;
-}
+const configureStore = (initialState = {}) => {
+  const store = createStore(reducer, initialState, devToolsEnhancer({}));
+  return store;
+};
 
 export default configureStore;

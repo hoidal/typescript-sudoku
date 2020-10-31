@@ -1,6 +1,8 @@
-import { GRID, BLOCK_COORDS } from '../../typings'
+import { GRID, BLOCK_COORDS } from '../../typings';
 
-export interface IReducer { 
-    grid?: GRID;
-    selectedBlock?: BLOCK_COORDS;
+export interface IReducer {
+  challengeGrid?: GRID;
+  solvedGrid?: GRID;
+  workingGrid?: GRID;
+  selectedBlock?: BLOCK_COORDS;
 }
