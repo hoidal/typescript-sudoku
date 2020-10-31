@@ -15,7 +15,8 @@ export const Container = styled.div<IProps>`
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 0;
-    font-size: 20px;
+    font-family: ${puzzle? 'Pangolin, cursive': 'Rock Salt, cursive'};
+    font-size: 22px;
     color: ${puzzle ? 'black' : 'gray'};
     font-weight: bold;
     height: auto;
