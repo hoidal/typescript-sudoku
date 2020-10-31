@@ -9,13 +9,9 @@ describe('isInSquare', () => {
       [8, 2, 7],
       [6, 9, 5],
     ];
-
-    // eslint-disable-next-line
-    expect(isInSquare({ square, value: 1 })).toBeTruthy;
-    // eslint-disable-next-line
-    expect(isInSquare({ square, value: 9 })).toBeTruthy;
-    // eslint-disable-next-line
-    expect(isInSquare({ square, value: 4 })).toBeTruthy;
+    expect(isInSquare({ square, value: 1 })).toBeTruthy();
+    expect(isInSquare({ square, value: 9 })).toBeTruthy();
+    expect(isInSquare({ square, value: 4 })).toBeTruthy();
   });
 
   it('returns false when value is not in grad square', () => {
@@ -24,12 +20,8 @@ describe('isInSquare', () => {
       [8, 2, 7],
       [6, 0, 5],
     ];
-
-    // eslint-disable-next-line
-    expect(isInSquare({ square, value: 1 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInSquare({ square, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInSquare({ square, value: 4 })).toBeFalsy;
+    expect(isInSquare({ square, value: 1 })).toBeFalsy();
+    expect(isInSquare({ square, value: 9 })).toBeFalsy();
+    expect(isInSquare({ square, value: 4 })).toBeFalsy();
   });
 });

@@ -14,7 +14,7 @@ describe('checkGrid', () => {
         [2, 8, 5, 9, 6, 3, 7, 1, 4],
         [3, 1, 9, 3, 1, 7, 8, 5, 6],
       ]),
-    ).toBeFalsy;
+    ).toBeFalsy();
 
     expect(
       checkGrid([
@@ -28,7 +28,7 @@ describe('checkGrid', () => {
         [2, 8, 5, 9, 6, 3, 7, 1, 4],
         [3, 1, 9, 3, 1, 7, 8, 5, 6],
       ]),
-    ).toBeFalsy;
+    ).toBeFalsy();
 
     expect(
       checkGrid([
@@ -42,7 +42,7 @@ describe('checkGrid', () => {
         [2, 8, 5, 9, 6, 3, 7, 1, 4],
         [3, 1, 9, 3, 1, 7, 8, 5, 0],
       ]),
-    ).toBeFalsy;
+    ).toBeFalsy();
   });
 
   it('returns true when grid is complete', () => {
@@ -58,6 +58,6 @@ describe('checkGrid', () => {
         [2, 8, 5, 9, 6, 3, 7, 1, 4],
         [3, 1, 9, 3, 1, 7, 8, 5, 6],
       ]),
-    ).toBeTruthy;
+    ).toBeTruthy();
   });
 });

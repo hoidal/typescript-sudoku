@@ -15,13 +15,9 @@ describe('isInCol', () => {
       [2, 8, 5, 9, 6, 3, 7, 1, 4],
       [3, 1, 9, 3, 1, 7, 8, 5, 6],
     ];
-
-    // eslint-disable-next-line
-    expect(isInCol({ grid, col: 0, value: 9 })).toBeTruthy;
-    // eslint-disable-next-line
-    expect(isInCol({ grid, col: 5, value: 9 })).toBeTruthy;
-    // eslint-disable-next-line
-    expect(isInCol({ grid, col: 8, value: 9 })).toBeTruthy;
+    expect(isInCol({ grid, col: 0, value: 9 })).toBeTruthy();
+    expect(isInCol({ grid, col: 5, value: 9 })).toBeTruthy();
+    expect(isInCol({ grid, col: 8, value: 9 })).toBeTruthy();
   });
 
   it('it returns false when value is not in grid column', () => {
@@ -37,11 +33,8 @@ describe('isInCol', () => {
       [3, 1, 9, 3, 1, 7, 8, 5, 6],
     ];
 
-    // eslint-disable-next-line
-    expect(isInCol({ grid, col: 0, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInCol({ grid, col: 5, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInCol({ grid, col: 8, value: 9 })).toBeFalsy;
+    expect(isInCol({ grid, col: 0, value: 9 })).toBeFalsy();
+    expect(isInCol({ grid, col: 5, value: 9 })).toBeFalsy();
+    expect(isInCol({ grid, col: 8, value: 9 })).toBeFalsy();
   });
 });

@@ -15,13 +15,9 @@ describe('isInRow', () => {
       [2, 8, 5, 9, 6, 3, 7, 1, 4],
       [3, 1, 9, 3, 1, 7, 8, 5, 6],
     ];
-
-    // eslint-disable-next-line
-    expect(isInRow({ grid, row: 0, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInRow({ grid, row: 5, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInRow({ grid, row: 8, value: 9 })).toBeFalsy;
+    expect(isInRow({ grid, row: 0, value: 9 })).toBeFalsy();
+    expect(isInRow({ grid, row: 5, value: 9 })).toBeFalsy();
+    expect(isInRow({ grid, row: 8, value: 9 })).toBeFalsy();
   });
 
   it('it returns false when value is not in grid row', () => {
@@ -37,11 +33,8 @@ describe('isInRow', () => {
       [3, 1, 9, 3, 1, 7, 8, 5, 6],
     ];
 
-    // eslint-disable-next-line
-    expect(isInRow({ grid, row: 0, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInRow({ grid, row: 5, value: 9 })).toBeFalsy;
-    // eslint-disable-next-line
-    expect(isInRow({ grid, row: 8, value: 9 })).toBeFalsy;
+    expect(isInRow({ grid, row: 0, value: 9 })).toBeFalsy();
+    expect(isInRow({ grid, row: 5, value: 9 })).toBeFalsy();
+    expect(isInRow({ grid, row: 8, value: 9 })).toBeFalsy();
   });
 });
