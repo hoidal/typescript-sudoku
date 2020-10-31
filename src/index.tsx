@@ -1,14 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
-import reportWebVitals from './core/reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import { Provider } from "react-redux";
+import { reportWebVitals, register } from "./core";
 
-import configureStore from './redux/store';
-import { Card, Content, Grid, Title } from './components';
-import Numbers from './components/button/numbers/Numbers.component'
-import RestartButton from './components/restart-button/RestartButton.component'
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyles, theme } from './styles';
+import configureStore from "./redux/store";
+import { Card, Content, Grid, Title } from "./components";
+import Numbers from "./components/button/numbers/Numbers.component";
+import RestartButton from "./components/restart-button/RestartButton.component";
+import { ThemeProvider } from "styled-components";
+import { GlobalStyles, theme } from "./styles";
 
 const store = configureStore();
 
@@ -28,10 +28,11 @@ ReactDOM.render(
       </Provider>
     </ThemeProvider>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+register();
