@@ -17,7 +17,7 @@ export const Container = styled.div<IProps>`
     flex-shrink: 0;
     padding: 0;
     font-family: 'Pangolin', cursive;
-    font-size: 18px;
+    font-size: 22px;
     color: ${puzzle ? 'black' : theme.colors.mediumBlue};
     font-weight: bold;
     height: auto;
