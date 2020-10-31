@@ -20,7 +20,7 @@ ReactDOM.render(
       <Provider store={store}>
         <PersistGate persistor={persistor}>
           <Content data-cy="content">
-            <Title data-cy="title">Sudoku</Title>
+            <Title data-cy="title">TypeScript Sudoku</Title>
             <Card data-cy="card">
               <RestartButton />
               <Grid />
