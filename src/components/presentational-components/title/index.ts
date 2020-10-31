@@ -7,7 +7,7 @@ export const Title = styled.h1`
         text-align: center;
         text-transform: uppercase;
         font-family: 'Permanent Marker', cursive;
-        font-size: 3em;
+        font-size: 1.5em;
         margin-bottom: 10px;
     `}
 `

@@ -15,12 +15,14 @@ export const Container = styled.div<IProps>`
     flex-basis: 0;
     flex-grow: 1;
     flex-shrink: 0;
-    font-family: ${puzzle ? 'Pangolin, cursive': 'Rock Salt, cursive'};
-    font-size: ${puzzle ? '28px': '16px'};
-    color: ${puzzle ? 'black' : 'gray'};
+    padding: 0;
+    font-family: 'Pangolin', cursive;
+    font-size: 18px;
+    color: ${puzzle ? 'black' : theme.colors.mediumBlue};
     font-weight: bold;
     height: auto;
     justify-content: center;
+    align-items: center;
     transition: ${theme.transition};
     user-select: none;
 

@@ -7,10 +7,11 @@ export const ButtonWrapper = styled.button`
     border: 2px solid ${theme.colors.black};
     border-radius: 4px;
     color: ${theme.colors.white};
+    font-family: 'Pangolin', cursive;
     cursor: pointer;
     display: flex;
     flex: 1;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     height: 40px;
     justify-content: center;
