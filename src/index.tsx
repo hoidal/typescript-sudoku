@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
+import { PersistGate } from "redux-persist/integration/react";
 import { reportWebVitals, register } from "./core";
 
 import configureStore from "./redux/store";
@@ -10,21 +11,23 @@ import RestartButton from "./components/restart-button/RestartButton.component";
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles, theme } from "./styles";
 
-const store = configureStore();
+const { store, persistor } = configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Provider store={store}>
-        <Content data-cy="content">
-          <Title data-cy="title">Sudoku</Title>
-          <Card data-cy="card">
-            <RestartButton />
-            <Grid />
-            <Numbers />
-          </Card>
-        </Content>
+        <PersistGate persistor={persistor}>
+          <Content data-cy="content">
+            <Title data-cy="title">Sudoku</Title>
+            <Card data-cy="card">
+              <RestartButton />
+              <Grid />
+              <Numbers />
+            </Card>
+          </Content>
+        </PersistGate>
       </Provider>
     </ThemeProvider>
   </React.StrictMode>,
