@@ -5,7 +5,7 @@
   "editor.formatOnSave": true,
   "javascript.format.enable": false,
   "material-icon-theme.activeIconPack": "react_redux",
-  "[typescript]": {
+  "[typescript, javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

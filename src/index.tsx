@@ -5,6 +5,8 @@ import reportWebVitals from './core/reportWebVitals';
 
 import configureStore from './redux/store';
 import { Card, Content, Grid, Title } from './components';
+import Numbers from './components/button/numbers/Numbers.component'
+import RestartButton from './components/restart-button/RestartButton.component'
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles, theme } from './styles';
 
@@ -18,7 +20,9 @@ ReactDOM.render(
         <Content data-cy="content">
           <Title data-cy="title">Sudoku</Title>
           <Card data-cy="card">
+            <RestartButton />
             <Grid />
+            <Numbers />
           </Card>
         </Content>
       </Provider>

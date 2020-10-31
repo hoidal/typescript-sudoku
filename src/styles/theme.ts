@@ -5,6 +5,8 @@ export default {
     blue: '#a0e9fd',
     lightBlue: '#caf3fe',
     white: 'white',
+    darkBlue: '#2c3e50',
+    mediumBlue: '#2980b9',
   },
   transition: '0.3s',
 };
